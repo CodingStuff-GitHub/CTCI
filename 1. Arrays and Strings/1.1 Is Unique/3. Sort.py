@@ -1,4 +1,4 @@
-# O(n log n) - No additional data structures required
+# O(n logn) - No additional data structures required
 def is_unique(input_str):
     # Sort the Input string
     input_str = ''.join(sorted(input_str))

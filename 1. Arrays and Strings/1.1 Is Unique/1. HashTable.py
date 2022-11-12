@@ -1,4 +1,4 @@
-# Hash Table  - O(n)
+# Hash Table
 def is_unique(input_str):
     # This will help to create the difference when checking in the hash table
     f = ord('a')

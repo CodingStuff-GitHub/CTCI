@@ -11,7 +11,7 @@ def string_compression(input_string):
         if i != curr:
             # Adding the current element to the final_string and its count as well
             final_string += str(curr) + str(count)
-            # Chaning current element to the i
+            # Changing current element to the i
             curr = i
             # Count is not equal to zero because the current element will be counted as 1 then next element will be 2
             count = 1

@@ -1,22 +1,21 @@
+import itertools
+
+
 def zero_matrix(matrix):
     rows_with_zeros = []
     columns_with_zeros = []
     # Count the zeros and add them in rows and columns with zeros
-    for i in range(len(matrix)):
-        for j in range(len(matrix)):
-            if matrix[i][j] == 0:
-                rows_with_zeros.append(i)
-                columns_with_zeros.append(j)
+    for i, j in itertools.product(range(len(matrix)), range(len(matrix))):
+        if matrix[i][j] == 0:
+            rows_with_zeros.append(i)
+            columns_with_zeros.append(j)
 
-    # Loop through the columns of every row in the array and make them zero
-    for p in rows_with_zeros:
-        for q in range(len(matrix)):
-            matrix[p][q] = 0
-
-    # Loop through the rows of every column in the array and make them zero
+    # Loop through the length and convert columns and rows to zero
     for p in range(len(matrix)):
         for q in columns_with_zeros:
             matrix[p][q] = 0
+        for q in rows_with_zeros:
+            matrix[q][p] = 0
     return matrix
 
 

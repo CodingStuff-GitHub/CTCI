@@ -1,4 +1,5 @@
 # Like HashTable I guess
+# Track the duplicaes in set and when encountered same. remove it by using prev to point at the element's next
 from utils import create_list, print_list
 
 

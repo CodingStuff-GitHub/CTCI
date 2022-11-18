@@ -20,4 +20,5 @@ def print_list(ll):
         arr.append(ll.val)
         ll = ll.next
     print(arr)
+    print(" -> ".join([str(i) for i in arr]))
     return arr

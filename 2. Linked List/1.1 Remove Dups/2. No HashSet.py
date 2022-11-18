@@ -1,4 +1,5 @@
 # Double pointer just like double loops
+# No buffer allocated
 from utils import create_list, print_list
 
 

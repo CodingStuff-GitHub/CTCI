@@ -3,12 +3,12 @@ from utils import create_list, print_list, append_at_tail
 
 # Two new Linked List which will take smaller and greater(or equal) elements
 # then we will merge them together by adding last element next to head of second linked list
-def two_linked_list(head, part):
+def two_linked_list(head, pivot):
     # h1 is for greater(or equal) elements
     # h2 is for less elements
     h1, h2 = None, None
     while head is not None:
-        if head.val >= part:
+        if head.val >= pivot:
             h1 = append_at_tail(h1, head.val)
         else:
             h2 = append_at_tail(h2, head.val)

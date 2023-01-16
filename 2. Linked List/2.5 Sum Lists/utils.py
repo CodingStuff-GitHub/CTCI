@@ -32,3 +32,15 @@ def print_list(ll):
         ll = ll.next
     print(" -> ".join([str(i) for i in arr]))
     return arr
+
+
+def reverse_list(rev_head):
+    curr, prev = rev_head, None
+    while curr.next is not None:
+        temp = curr.next
+        curr.next = prev
+        prev = curr
+        curr = temp
+    rev_head = curr
+    rev_head.next = prev
+    return rev_head

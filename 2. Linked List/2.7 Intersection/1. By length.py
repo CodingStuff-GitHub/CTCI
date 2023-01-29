@@ -16,7 +16,7 @@ def intersect_at_n(head1, head2, where):
 def find_intersection(head1, head2):
     # Check if they are actually intersecting - got to last element and check if they are same for both heads
     temp1, temp2 = head1, head2
-    length_of_head1, length_of_head2 = 0, 0
+    length_of_head1 = length_of_head2 = 0
     # Go to last element
     while temp1.next is not None:
         length_of_head1 += 1

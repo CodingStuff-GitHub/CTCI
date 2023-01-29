@@ -2,8 +2,7 @@ from utils import create_list, print_list
 
 
 def palindrome_check(head):
-    slow = head
-    fast = head.next
+    slow, fast = head, head.next
     stack = [slow]
     # Loop for runner and put it in stack
     while fast.next is not None and fast.next.next is not None:

@@ -25,6 +25,11 @@ def append_at_tail(head, val):
     return head
 
 
+def append_at_head(head, val):
+    head = Node(val, None) if head is None else Node(val, head)
+    return head
+
+
 def print_list(ll):
     arr = []
     while ll is not None:

@@ -27,5 +27,15 @@ def peek():
     return stack[-1]
 
 
-def isEmpty():
-    return not len(stack)
+def isEmpty(stack: list[int]) -> bool:
+    """
+    Checks if the stack is empty or not.
+
+    Args:
+    - stack: A list representing the stack.
+
+    Returns:
+    - A boolean value indicating whether the stack is empty or not.
+    """
+
+    return not stack
